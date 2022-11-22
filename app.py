@@ -114,7 +114,7 @@ def main():
     heart = load_dataset()
 
     st.sidebar.title("Fill Entries to check")
-    st.sidebar.image("images/heart-sidebar.png", width=100)
+    st.sidebar.image("images/heart-sidebar.png", width=185)
 
     input_df = user_input_features()
     df = pd.concat([input_df, heart], axis=0)
