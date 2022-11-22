@@ -86,7 +86,7 @@ def main():
 
     with col1:
         st.image("images/DoctorG.png",
-                 caption="I'll help you diagnose your heart health! - Dr. Logistic Regression",
+                 caption="I'll help you diagnose your heart health! - Dr. _architect_",
                  width=150)
         submit = st.button("Predict")
     with col2:
@@ -113,7 +113,7 @@ def main():
 
     heart = load_dataset()
 
-    st.sidebar.title("Feature Selection")
+    st.sidebar.title("Fill Entries to Check Status")
     st.sidebar.image("images/heart-sidebar.png", width=100)
 
     input_df = user_input_features()
