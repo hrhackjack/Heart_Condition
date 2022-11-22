@@ -147,7 +147,7 @@ def main():
                         f" heart disease is {round(prediction_prob[0][1] * 100, 2)}%."
                         f" It sounds like you are not healthy.**")
             st.image("images/heart-bad.jpg",
-                     caption="I'm not satisfied with the condition of your heart! - Dr. Logistic Regression")
+                     caption="I'm not satisfied with the condition of your heart! - Dr. _architect_")
 
 
 if __name__ == "__main__":
