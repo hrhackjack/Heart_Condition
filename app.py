@@ -6,7 +6,7 @@ import pickle
 import sklearn
 
 DATASET_PATH = "data/heart_2020_cleaned.csv"
-LOG_MODEL_PATH = "Model/logistic_regression.pkl"
+LOG_MODEL_PATH = "model/logistic_regression.pkl"
 
 
 def main():
@@ -78,7 +78,7 @@ def main():
         page_icon="images/heart-fav.png"
     )
 
-    st.title("Heart Disease Prediction")
+    st.title("Heart Disease Prediction by Examining Your Lifestyle!")
     st.subheader("Are you wondering about the condition of your heart? "
                  "This app will help you to diagnose it!")
 
@@ -86,34 +86,34 @@ def main():
 
     with col1:
         st.image("images/DoctorG.png",
-                 caption="I'll help you diagnose your heart health! -      Dr. _architect_",
+                 caption="I'll help you diagnose your heart health! - **Dr. _architect**",
                  width=150)
         submit = st.button("Predict")
     with col2:
         st.markdown("""
-        Did you know that machine learning models can help you
-        predict heart disease pretty accurately? In this app, you can
-        estimate your chance of heart disease (yes/no) in seconds!
+        Did you know that Machine Learning models can help you
+        predict heart disease pretty accurately by just observing your routine and Lifestyle.? 
+        In this app, you can estimate your chance of having heart disease (Yes/No) in seconds!
         
-        Here, a logistic regression model using an undersampling technique
+        Here, a logistic regression model with XGBoost, using an undersampling technique
         was constructed using survey data of over 300k US residents from the year 2020.
         This application is based on it because it has proven to be better than the random forest
-        (it achieves an accuracy of about 80%, which is quite good).
+        (it achieves an accuracy of about 91%, which is quite good).
         
         To predict your heart disease status, simply follow the steps bellow:
-        1. Enter the parameters that best describe you;
+        1. Enter the parameters according to your Lifestyle, that best describe you ;
         2. Press the "Predict" button and wait for the result.
             
         **Keep in mind that this results is not equivalent to a medical diagnosis!
         This model would never be adopted by health care facilities because of its less
         than perfect accuracy, so if you have any problems, consult a human doctor.**
         
-        **Author: The_architect -----> [[GitHub](https://github.com/im-architect/Heart_Condition)]**
+        **Author: The_architect -----> [[GitHub](https://github.com/im-architect)]**
         """)
 
     heart = load_dataset()
 
-    st.sidebar.title("Fill Entries to check")
+    st.sidebar.title("Fill Entries to check the Status of your **Heart**")
     st.sidebar.image("images/heart-sidebar.png", width=185)
 
     input_df = user_input_features()
@@ -140,7 +140,7 @@ def main():
             st.markdown(f"**The probability that you'll have"
                         f" heart disease is {round(prediction_prob[0][1] * 100, 2)}%."
                         f" You are healthy!**")
-            st.image("images/heart-okay.jpg",
+            st.image("images/heart-okay_.jpg",
                      caption="Your heart seems to be okay! - Dr. _architect_")
         else:
             st.markdown(f"**The probability that you will have"
