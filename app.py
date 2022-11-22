@@ -140,7 +140,7 @@ def main():
             st.markdown(f"**The probability that you'll have"
                         f" heart disease is {round(prediction_prob[0][1] * 100, 2)}%."
                         f" You are healthy!**")
-            st.image("images/heart-okay_.jpg",
+            st.image("images/heart-okay.jpg",
                      caption="Your heart seems to be okay! - Dr. _architect_")
         else:
             st.markdown(f"**The probability that you will have"
