@@ -108,7 +108,7 @@ def main():
         This model would never be adopted by health care facilities because of its less
         than perfect accuracy, so if you have any problems, consult a human doctor.**
         
-        **Author: The_architect -----> [[GitHub](https://github.com/im-architect)]**
+        **Author: The_architect -----> [[GitHub](https://github.com/im-architect/Heart_Condition)]**
         """)
 
     heart = load_dataset()
