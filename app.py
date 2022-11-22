@@ -86,7 +86,7 @@ def main():
 
     with col1:
         st.image("images/DoctorG.png",
-                 caption="I'll help you diagnose your heart health! - Dr. _architect_",
+                 caption="I'll help you diagnose your heart health! -      Dr. _architect_",
                  width=150)
         submit = st.button("Predict")
     with col2:
