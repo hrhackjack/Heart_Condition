@@ -80,13 +80,13 @@ def main():
 
     st.title("Heart Disease Prediction by Examining Your Lifestyle!")
     st.subheader("Are you wondering about the condition of your heart? "
-                 "This app will help you to diagnose it!")
+                 "This Application will help you to diagnose it!")
 
     col1, col2 = st.columns([1, 3])
 
     with col1:
         st.image("images/DoctorG.png",
-                 caption="I'll help you diagnose your heart health! - **Dr. _architect**",
+                 caption="I'll help you diagnose your heart health! - Dr. _architect",
                  width=150)
         submit = st.button("Predict")
     with col2:
@@ -95,7 +95,7 @@ def main():
         predict heart disease pretty accurately by just observing your routine and Lifestyle.? 
         In this app, you can estimate your chance of having heart disease (Yes/No) in seconds!
         
-        Here, a logistic regression model with XGBoost, using an undersampling technique
+        Here, a **Logistic Regression model with XGBoost**, using an undersampling technique
         was constructed using survey data of over 300k US residents from the year 2020.
         This application is based on it because it has proven to be better than the random forest
         (it achieves an accuracy of about 91%, which is quite good).
