@@ -108,12 +108,12 @@ def main():
         This model would never be adopted by health care facilities because of its less
         than perfect accuracy, so if you have any problems, consult a human doctor.**
         
-        **Author: The_architect -----> [[GitHub](https://github.com/im-architect)]**
+        **Author: The_architect -----> [[GitHub](https://github.com/im-architect/Heart_Condition)]**
         """)
 
     heart = load_dataset()
 
-    st.sidebar.title("Fill Entries to Check Status")
+    st.sidebar.title("Fill Entries to check")
     st.sidebar.image("images/heart-sidebar.png", width=100)
 
     input_df = user_input_features()
