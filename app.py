@@ -96,7 +96,7 @@ def main():
         In this app, you can estimate your chance of having heart disease (Yes/No) in seconds!
         
         Here, a **Logistic Regression model with XGBoost**, using an undersampling technique
-        was constructed using survey data of over 300k US residents from the year 2020.
+        was constructed using survey data of over 800k people across the globe from the year 2020.
         This application is based on it because it has proven to be better than the random forest
         (it achieves an accuracy of about 91%, which is quite good).
         
